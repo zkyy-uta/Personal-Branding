@@ -1,15 +1,14 @@
 
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #D6EAF8; /* Warna biru muda pastel */
+            font-family: Arial, sans-serif;        
         }
+
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         header {
             background: #333;
@@ -22,6 +21,10 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none; /* Menghilangkan bullet points */
+            padding: 0; /* Menghilangkan padding default */
         }
         footer {
             background: #333;
