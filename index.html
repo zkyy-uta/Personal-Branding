@@ -3,97 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Personal Branding</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section");
-
-        function revealSections() {
-            sections.forEach((section) => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                if (sectionTop < windowHeight - 100) {
-                    section.classList.add("show");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", revealSections);
-        revealSections();
-    });
-</script>
     <header>
-        <h1>Thalita Aurelia Marsim</h1>
-        <p>Web Developer | Designer | Software Enggineer</p>
+        <h1>Personal Branding</h1>
     </header>
+    
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya Thalita Aurelia Marsim, seorang pengembang web yang antusias dalam membangun solusi digital.</p>
+        <p>Email: thalitaaurelia04@gmail.com</p>
+        <p>Alamat: Kota Batam, Indonesia</p>
+        <a href="https://github.com/zkyy-uta" target="_blank">GitHub</a>
+    </section>
 
-    <div class="container">
-        <!-- Identitas Diri -->
-        <section>
-            <h2>Tentang Saya</h2>
-            <p>Halo! Saya Thalita Aurelia Marsim, seorang pengembang web yang antusias dalam membangun solusi digital.</p>
-            <p>Email: thalitaaurelia04@gmail.com</p>
-            <p>Alamat: Kota Batam, Indonesia</p>
-            <p> 
-                <a href="https://github.com/zkyy-uta" target="_blank">GitHub</a>
-            </p>
-        </section>
+    <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <p><strong>Universitas Politeknik Negeri Batam</strong> - Teknologi Rekayasa Perangkat Lunak (2024 - Sekarang)</p>
+        <p><strong>SMK Al-Azhar Batam</strong> - Rekayasa Perangkat Lunak (2021 - 2024)</p>
+    </section>
 
-        <!-- Riwayat Pendidikan -->
-        <section>
-            <h2>Riwayat Pendidikan</h2>
-            <ul>
-                <li><strong>Universitas Politeknik Negeri Batam</strong> - Teknologi Rekayasa Preangkat Lunak (2024 - Sekarang)</li>
-                <li><strong>SMK Al-Azhar Batam</strong> - Rekayasa Perangkat Lunak (2021 - 2024)</li>
-            </ul>
-        </section>
-
-        <!-- Proyek -->
-        <section>
-            <h2>Proyek</h2>
-            <ul>
-                <li><strong>Aplikasi Pengajuan Usulan Pelatihan dan LPJ</strong> - Aplikasi untuk mengelola pelatihan karyawan.</li>
-                <li><strong>Eco Enzim Web</strong> - Platform edukasi tentang manfaat eco-enzim.</li>
-                <li><strong>Proyek PBL</strong> - Proyek berbasis pembelajaran di semester 1.</li>
-            </ul>
-        </section>
-
-        <!-- Skillset -->
-        <section>
-            <h2>Skillset</h2>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-            </ul>
-
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-                <li>Analytical Thinking</li>
-                <li>Adaptablity & Learning Mindset</li>
-                <li>Communication & Documentation</li>
-            </ul>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2025 Litaa. Dibuat dengan 💙</p>
-    </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script>
-    gsap.from("header h1", { duration: 1, opacity: 0, y: -50, ease: "bounce.out" });
-    gsap.from("header p", { duration: 1, opacity: 0, y: -20, delay: 0.5 });
-
-    gsap.from(".profile-img", { duration: 1, opacity: 0, scale: 0, delay: 1, ease: "elastic.out(1, 0.3)" });
-
-    gsap.from("footer", { duration: 1, opacity: 0, y: 50, delay: 1.5 });
-</script>
+    <section id="proyek">
+        <h2>Proyek</h2>
+        <p><strong>Aplikasi Pengajuan Usulan Pelatihan dan LPJ</strong> - Aplikasi untuk mengelola pelatihan karyawan.</p>
+        <p><strong>Eco Enzim Web</strong> - Platform edukasi tentang manfaat eco-enzim.</p>
+    </section>
+    
+    <section id="skill">
+        <h2>Skill</h2>
+        <h3>Programming Languages</h3>
+        <p>PHP, JavaScript, HTML, CSS</p>
+        <h3>Tools</h3>
+        <p>VS Code, GitHub, Bootstrap</p>
+        <h3>Soft Skills</h3>
+        <p>Problem Solving, Team Collaboration, Analytical Thingking</p>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
