@@ -1,35 +1,306 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
-    color: #333;
+/* Reset dasar */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
     color: white;
-    padding: 20px;
-    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-section {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+header ul {
+    display: flex;
+    list-style: none;
 }
 
-a {
-    color: #00796b;
+header ul li {
+    margin: 0 15px;
+}
+
+header a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
+header a:hover {
+    color: #ffd700;
 }
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0071fc, #42d6ff);
+    color: white;
+}
+
+.profile-pic {
+    width: 150px; /* Ukuran tetap */
+    height: 150px; /* Ukuran tetap */
+    object-fit: cover; /* Memastikan foto tidak gepeng */
+    border-radius: 50%; /* Membuat lingkaran */
+    border: 4px solid white; /* Menambah border putih */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Tentang Saya */
+#about,#education, #projects, #contact {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.about-section {
+    max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* Buat teks rata tengah */
+    font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    background-color: #f5f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Pastikan teks di dalamnya rata kiri */
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center; /* Biar teks sejajar dengan ikon */
+    gap: 8px; /* Jarak antara ikon dan teks */
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #333;
+}
+
+
+/* Riwayat Pendidikan */
+.education-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    background: white;
+    border-radius: 12px; /* Membuat kartu lebih smooth */
+    padding: 15px;
+    width: 280px; /* Ukuran seragam */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.education-pic {
+    width: 100%;
+    height: 150px; /* Ukuran gambar tetap */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    border-radius: 8px; /* Agar gambar tidak terlalu tajam di sudut */
+}
+
+.education-item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.education-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-section, .tools-section, .soft-skills-section {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e3e3e3;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+/* Animasi Fade-In dan Slide-Up */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terapkan animasi ke setiap section */
+.skills-section, .tools-section, .soft-skills-section {
+    animation: fadeSlideUp 1s ease-in-out;
+    opacity: 0; /* Supaya tidak muncul langsung */
+    animation-fill-mode: forwards; /* Tetap pada posisi akhir animasi */
+}
+
+/* Tambahkan delay untuk efek berurutan */
+.skills-section {
+    animation-delay: 0.3s;
+}
+.tools-section {
+    animation-delay: 0.6s;
+}
+.soft-skills-section {
+    animation-delay: 0.9s;
+}
+
+
+/* Styling untuk proyek agar mirip dengan riwayat pendidikan */
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animasi hover mirip riwayat pendidikan */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk gambar agar proporsional */
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Animasi gambar saat hover */
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+
+.project-item h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ff3399;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+/* Kontak */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0072ff;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
