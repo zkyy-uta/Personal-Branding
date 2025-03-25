@@ -1,50 +1,115 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Branding</title>
+    <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Personal Branding</h1>
+        <h1>Thalita Aurelia Marsim</h1>
+        
     </header>
     
-    <section id="tentang">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Saya Thalita Aurelia Marsim, seorang pengembang web yang antusias dalam membangun solusi digital.</p>
-        <p>Email: thalitaaurelia04@gmail.com</p>
-        <p>Alamat: Kota Batam, Indonesia</p>
-        <a href="https://github.com/zkyy-uta" target="_blank">GitHub</a>
-    </section>
-
-    <section id="pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <p><strong>Universitas Politeknik Negeri Batam</strong> - Teknologi Rekayasa Perangkat Lunak (2024 - Sekarang)</p>
-        <p><strong>SMK Al-Azhar Batam</strong> - Rekayasa Perangkat Lunak (2021 - 2024)</p>
-    </section>
-
-    <section id="proyek">
-        <h2>Proyek</h2>
-        <p><strong>Aplikasi Pengajuan Usulan Pelatihan dan LPJ</strong> - Aplikasi untuk mengelola pelatihan karyawan.</p>
-        <p><strong>Eco Enzim Web</strong> - Platform edukasi tentang manfaat eco-enzim.</p>
+    <section id="hero">
+        <img src="assets/me.jpg" alt="Foto Profil" class="profile-pic">
+        <h2>Halo, Saya <span>Thalita Aurelia Marsim</span></h2>
+        <p>Junior Web Developer</p>
     </section>
     
-    <section id="skill">
-        <h2>Skill</h2>
-        <h3>Programming Languages</h3>
-        <p>PHP, JavaScript, HTML, CSS</p>
-        <h3>Tools</h3>
-        <p>VS Code, GitHub, Bootstrap</p>
-        <h3>Soft Skills</h3>
-        <p>Problem Solving, Team Collaboration, Analytical Thingking</p>
+    <section id="about" class="about-section">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p>
+            Halo! Saya mahasiswa Teknik Informatika yang sangat tertarik dengan dunia teknologi. 
+        </p>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Alamat: Kampung Pelita, Batam, Kepulauan Riau</p>
+            <p><i class="fas fa-envelope"></i> Email: thalitaaurelia04@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Telepon: 0896-3573-0947</p>
+        </div>
+    </section>        
+    
+    <section id="education">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <img src="assets/polibatam.jpeg" alt="Universitas" class="education-pic">
+                <h3>Universitas Politeknik Negeri Batam</h3>
+                <p>Teknologi Rekayasa Perangkat Lunak - (2024-Sekarang)</p>
+            </div>
+            <div class="education-item">
+                <img src="assets/smk.jpeg" alt="Sekolah" class="education-pic">
+                <h3>SMK Al-Azhar Batam</h3>
+                <p>Rekayasa Perangkat Lunak - (2021-2024)</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP, Bootstrap</li>
+                    <li>MySQL, Laravel</li>
+                </ul>
+            </div>
+        
+            <div class="tools-section">
+                <h3>Tools</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Git & GitHub</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        
+            <div class="soft-skills-section">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Team Collaboration</li>
+                    <li>Analytical Thinking</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>           
+    </section>    
+
+    <section id="projects">
+        <h2>Proyek</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="assets/ajukan.jpg" alt="Aplikasi Pengajuan Usulan Pelatihan dan LPJ" class="project-image">
+                <h3>Aplikasi Pengajuan Usulan Pelatihan dan LPJ</h3>
+                <p>Aplikasi Pengajuan dan Pelatihan LPJ  bertujuan untuk mempermudah dan meningkatkan efisiensi proses pengajuan pelatihan dengan mudah dan pelaporan pertanggungjawaban (LPJ) dalam organisasi. Dengan fitur digital terintegrasi, sistem ini memungkinkan karyawan untuk mengajukan pelatihan secara mudah, manajer untuk meninjau dan menyetujui pengajuan secara transparan, serta admin untuk mengelola data pelatihan dan LPJ secara efisien.
+                </p>
+            </div>
+            <div class="project-card">
+                <img src="assets/eco-enzim.png" alt="Aplikasi Web Eco Enzim" class="project-image">
+                <h3>Aplikasi Web Eco Enzim</h3>
+                <p>Web yang berfungsi sebagai pusat informasi dan edukasi Eco Enzyme, dimana web ini bisa digunakan untuk menjadi  media edukasi dan promosi  kegiatan yang melindungi lingkungan dengan eco enzim
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Kontak</h2>
+        <div class="social-links">
+            <a href="https://github.com/zkyy-uta">GitHub</a>
+            <a href="mailto:thalitaaurelia04@gmail.com">Email</a>
+            <a href="https://www.instagram.com/gzvskyy?igsh=dm9remFvZDkyYWJo&utm_source=qr">Instagram</a>
+        </div>
     </section>
     
     <footer>
-        <p>© 2025 Litaa | <a href="https://www.instagram.com/gzvskyy?igsh=dm9remFvZDkyYWJo&utm_source=qr" target="_blank">Instagram</a></p>
+        <p>&copy; 2025 Lita. All Rights Reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
